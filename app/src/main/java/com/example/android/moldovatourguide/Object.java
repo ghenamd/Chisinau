@@ -5,8 +5,7 @@ package com.example.android.moldovatourguide;
  * Created by Ghena on 24/03/2017.
  */
 
-public class Object  {
-
+public class Object {
 
 
     //Declare the variables
@@ -16,34 +15,27 @@ public class Object  {
 
     private int mImageResourceId;
 
-    private String mVideoPath = NO_VIDEO;
-
-    private static final String NO_VIDEO = "";
+    private int mVideoResource;
 
 
-
-// we use Constructor to initialize the variables
-    public Object (String string1, String string2,int imageResourceId) {
+    // we use Constructor to initialize the variables
+    public Object(String string1, String string2, int imageResourceId) {
 
         mString1 = string1;
         mString2 = string2;
         mImageResourceId = imageResourceId;
-
-
     }
-    public  Object( String string1, String string2,String videoUri){
 
 
+    public Object(String string1, String string2, int imageResourceId, int videoResource) {
 
         mString1 = string1;
         mString2 = string2;
-        mVideoPath = videoUri;
-
-
-
-
+        mImageResourceId = imageResourceId;
+        mVideoResource = videoResource;
 
     }
+
 
     public String getString1() {
         return mString1;
@@ -53,25 +45,22 @@ public class Object  {
         return mString2;
     }
 
-    public int getImageResourceId() {return mImageResourceId;}
-
-    public  String getVideoPathId(){return mVideoPath;}
-
-
-    // / return true if an object comes with a Video
-    public boolean hasVideo(){
-
-        return mVideoPath != NO_VIDEO;
-
+    public int getImageResourceId() {
+        return mImageResourceId;
     }
+
+    public int getVideoResource() {
+        return mVideoResource;
+    }
+
 
     @Override
     public String toString() {
         return "Object{" +
                 "mString1='" + mString1 + '\'' +
-                ", mString2='" + mString2+ '\'' +
+                ", mString2='" + mString2 + '\'' +
                 ", mImageResourceId=" + mImageResourceId +
-                ", mVideoPath=" + mVideoPath +
+
                 '}';
     }
 

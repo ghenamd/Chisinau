@@ -9,7 +9,6 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.VideoView;
 
 import java.util.ArrayList;
 
@@ -60,15 +59,6 @@ public class ObjectAdapter extends ArrayAdapter<Object> {
         ImageView image = (ImageView) listItemView.findViewById(R.id.image);
         image.setImageResource(currentObject.getImageResourceId());
 
-        VideoView videoView = (VideoView) listItemView.findViewById(R.id.video);
-
-
-        if (currentObject.hasVideo()){
-        videoView.setVideoPath(currentObject.getVideoPathId());
-        videoView.setVisibility(View.VISIBLE);}
-        else {
-            videoView.setVisibility(View.GONE);
-        }
 
 
         return listItemView;
