@@ -19,8 +19,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // This circle menu was created by using  Hitomis Circle Menu library.
+        // The tutorial on how to create this circle menu has been found on youtube.
         circleMenu = (CircleMenu) findViewById(R.id.circle_menu);
-
         circleMenu.setMainMenu(Color.parseColor("#CDCDCD"), R.mipmap.ic_touch_app_white_36dp, R.mipmap.ic_touch_app_white_36dp);
         circleMenu.addSubMenu(Color.parseColor("#3DC7F4"), R.mipmap.ic_room_white_24dp)
                 .addSubMenu(Color.parseColor("#3DC7F4"), R.mipmap.ic_local_airport_white_24dp)
@@ -100,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
                                                                      startActivity(museum);
                                                                  }
                                                              }, 600);
-                                                             Toast.makeText(MainActivity.this,"Museum",Toast.LENGTH_SHORT).show();
+                                                             Toast.makeText(MainActivity.this, "Museums", Toast.LENGTH_SHORT).show();
                                                              break;
                                                      }
                                                  }

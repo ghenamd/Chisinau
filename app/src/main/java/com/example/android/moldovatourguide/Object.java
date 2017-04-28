@@ -1,9 +1,8 @@
 
 package com.example.android.moldovatourguide;
 
-import java.util.Objects;
-
 /**
+ *
  * Created by Ghena on 24/03/2017.
  */
 
@@ -17,10 +16,6 @@ public class Object {
 
     private int mImageResourceId;
 
-    private String mVideoResource;
-    private static final String NO_VIDEO_PROVIDED = "";
-
-
 
     // we use Constructor to initialize the variables
     public Object(String string1, String string2, int imageResourceId) {
@@ -31,14 +26,6 @@ public class Object {
     }
 
 
-    public Object(String string1, String string2, int imageResourceId, String videoResource) {
-
-        mString1 = string1;
-        mString2 = string2;
-        mImageResourceId = imageResourceId;
-        mVideoResource = videoResource;
-
-    }
 
 
     public String getString1() {
@@ -53,15 +40,8 @@ public class Object {
         return mImageResourceId;
     }
 
-    public String getVideoResource() {
-        return mVideoResource;
-    }
 
-    // return true if a word comes with an Image
-    public boolean hasVideo() {
 
-        return !Objects.equals(mVideoResource, NO_VIDEO_PROVIDED);
-    }
 
 
     @Override
