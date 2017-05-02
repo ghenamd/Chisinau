@@ -17,10 +17,7 @@ import java.util.ArrayList;
  *
  * Created by Ghena on 24/03/2017.
  */
-
 public class ObjectAdapter extends ArrayAdapter<Object> {
-
-
 
     public ObjectAdapter(Activity context, ArrayList<Object> objects) {
         // Here, we initialize the ArrayAdapter's internal storage for the context and the list.
@@ -28,16 +25,13 @@ public class ObjectAdapter extends ArrayAdapter<Object> {
         // Because this is a custom adapter for two TextViews and an ImageView, the adapter is not
         // going to use this second argument, so it can be any value. Here, we used 0.
         super(context, 0, objects);
-
     }
-
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         //we use a ViewHolder in order to make scrolling smooth due to the size of the images
         // if we don't use a ViewHolder scrolling of the listView lags.
         ViewHolder holder;
-
 
         // Check if the existing view is being reused, otherwise inflate the view
         View listItemView = convertView;
@@ -53,24 +47,16 @@ public class ObjectAdapter extends ArrayAdapter<Object> {
 
         } else {
             holder = (ViewHolder) listItemView.getTag();
-
         }
-
         Object currentObject = getItem(position);
 
         // finds the text in the ArrayList and sets it to the list_item.xml
-
-
         holder.text1.setText(currentObject.getString1());
-
         holder.text2.setText(currentObject.getString2());
         // finds the image in the ArrayList and sets it to the list_item.xml
         holder.image.setImageResource(currentObject.getImageResourceId());
-
         return listItemView;
-
     }
-
     //We create a ViewHolder object to hold all the components of the listView such as
     //text1,text2,and image.
     static class ViewHolder {

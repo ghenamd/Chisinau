@@ -13,10 +13,6 @@ import java.util.ArrayList;
 
 public class AirportActivity extends AppCompatActivity {
 
-
-
-
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,18 +24,11 @@ public class AirportActivity extends AppCompatActivity {
         objects.add(new Object("Chisinau Airport","Moldova's main international airport, located 13 km (8.1 mi) southeast of the centre of Chisinau.\nIt serves as headquarters for Air Moldova, the country's national airline. " +
                 "Chisinau International Airport offers connections to major destinations, within Europe and Asia.\nAddress: Aeroportului 80/30 Str, Chisinau MD 2026\nTel: +373 22 525 111",R.drawable.chisinau_airport));
 
-
         ObjectAdapter adapter = new ObjectAdapter(this,objects);
 
         ListView listView = (ListView)findViewById(R.id.list_item);
 
         listView.setAdapter(adapter);
-
-
     }
-
-
-
-
 }
 

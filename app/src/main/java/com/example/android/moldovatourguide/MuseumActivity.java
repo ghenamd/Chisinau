@@ -27,9 +27,7 @@ public class MuseumActivity extends AppCompatActivity {
                 "The museum has more than 135,000 pieces, including important exhibits about the natural history of Moldova.\nAddress: 82 M.Kogilniceanu str., Chisinau\nTel: +373 22 244 002",R.drawable.chisinau_etnography_museum));
 
         ObjectAdapter adapter = new ObjectAdapter(this,objects);
-
         ListView listView = (ListView)findViewById(R.id.list_item);
-
         listView.setAdapter(adapter);
 
     }

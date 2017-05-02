@@ -18,7 +18,6 @@ public class HotelActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list_view);
         setTitle("Hotel");
-
         ArrayList<Object> objects = new ArrayList<>();
         objects.add(new Object("Leogrand Hotel", "Located in Chisinau city center, the Radisson Blu Leogrand Hotel is within walking distance of Sky Tower Business Center. " +
                 "Many embassies and businesses are only a few minutes away. You can visit attractions such as Nativity Cathedral and Stefan Cel Mare Park, and arrange a winery tour with the help of our concierge desk." +
@@ -34,7 +33,6 @@ public class HotelActivity extends AppCompatActivity {
         ObjectAdapter adapter = new ObjectAdapter(this, objects);
 
         ListView listView = (ListView) findViewById(R.id.list_item);
-
         listView.setAdapter(adapter);
     }
 }

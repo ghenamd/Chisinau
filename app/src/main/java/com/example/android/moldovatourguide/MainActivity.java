@@ -30,8 +30,6 @@ public class MainActivity extends AppCompatActivity {
                 .addSubMenu(Color.parseColor("#3DC7F4"), R.mipmap.ic_restaurant_white_24dp)
                 .addSubMenu(Color.parseColor("#3DC7F4"),R.mipmap.ic_account_balance_white_24dp);
 
-
-
         circleMenu.setOnMenuSelectedListener(new OnMenuSelectedListener() {
 
                                                  @Override
@@ -106,9 +104,7 @@ public class MainActivity extends AppCompatActivity {
                                                      }
                                                  }
                                              }
-
         );
-
 
     }
     @Override

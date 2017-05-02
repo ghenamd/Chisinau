@@ -13,15 +13,11 @@ import java.util.ArrayList;
  */
 
 public class WineTourActivity extends AppCompatActivity {
-
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list_view);
         setTitle("Wine Tour");
-
-
         final ArrayList<Object> objects = new ArrayList<>();
 
         objects.add(new Object("Purcari Winery", "Purcari Winery situated 75km from Chisinau city centre is known to the whole world for its premium wines, which have received awards and praise from international competitions like Decanter, Challenge International du Vin, Concours Mondial de Bruxelles, " +
@@ -34,18 +30,11 @@ public class WineTourActivity extends AppCompatActivity {
                 "between 1986 and 1991. Spirit of the past times is felt in this underground wine city growing out of the large tunnels. " +
                 "Natural limestone galleries with total length of 200 km may be passed by transport. And the streets of the underground wine city, placed on a surface of 55 km, are full of oak buts that are standing there as guardians on the watch .\nAddress: Milestii Mici Village, Ialoveni District" +
                 ", Republic of Moldova, MD-6819.\nTel: +373 22 382 333", R.drawable.milestii_mici_winery));
+
         ObjectAdapter adapter = new ObjectAdapter(this, objects);
-
         ListView listView = (ListView) findViewById(R.id.list_item);
-
         listView.setAdapter(adapter);
-
-
-
-
     }
-
-
 }
 
 

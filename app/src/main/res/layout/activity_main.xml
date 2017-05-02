@@ -4,12 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.android.moldovatourguide.MainActivity">
-
     <com.hitomi.cmlibrary.CircleMenu
         android:id="@+id/circle_menu"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_centerInParent="true"
         />
-
 </RelativeLayout>
