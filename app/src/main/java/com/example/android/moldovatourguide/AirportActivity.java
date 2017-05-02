@@ -22,7 +22,7 @@ public class AirportActivity extends AppCompatActivity {
 
         ArrayList<Object> objects = new ArrayList<>();
         // These arguments like "Chisinau Airport" can go here due to the new Object java class created with @param string1,@param string2 ,@param imageResourceId
-        objects.add(new Object("Chisinau Airport", getString(R.string.airport_description), R.drawable.chisinau_airport));
+        objects.add(new Object(getString(R.string.chisinau_airport), getString(R.string.airport_description), R.drawable.chisinau_airport));
 
         ObjectAdapter adapter = new ObjectAdapter(this,objects);
 

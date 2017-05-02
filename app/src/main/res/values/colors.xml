@@ -16,4 +16,6 @@
     <color name="food_drink_activity">#FF6A00</color>
     <color name="text_color">#FFFFFF</color>
     <color name="black">#000000</color>
+    <string name="color_main_menu">#CDCDCD</string>
+    <string name="color_main_menu1">#3DC7F4</string>
 </resources>

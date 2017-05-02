@@ -20,9 +20,9 @@ public class WineTourActivity extends AppCompatActivity {
         setTitle(getString(R.string.wine_tour));
         final ArrayList<Object> objects = new ArrayList<>();
 
-        objects.add(new Object("Purcari Winery", getString(R.string.purcari_winery_description), R.drawable.purcari_winery));
-        objects.add(new Object("Cricova Winery", getString(R.string.cricova_winery_description), R.drawable.cricova_cellar_winery));
-        objects.add(new Object("Milestii Mici Winery", getString(R.string.milestii_winery_description), R.drawable.milestii_mici_winery));
+        objects.add(new Object(getString(R.string.puracari_winery), getString(R.string.purcari_winery_description), R.drawable.purcari_winery));
+        objects.add(new Object(getString(R.string.cricova_winery), getString(R.string.cricova_winery_description), R.drawable.cricova_cellar_winery));
+        objects.add(new Object(getString(R.string.milestii_mici_winery), getString(R.string.milestii_winery_description), R.drawable.milestii_mici_winery));
 
         ObjectAdapter adapter = new ObjectAdapter(this, objects);
         ListView listView = (ListView) findViewById(R.id.list_item);

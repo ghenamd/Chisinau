@@ -20,4 +20,24 @@
     <string name="cricova_winery_description">\"Cricova\" JSC is a pearl of the Moldovan wine that represents an unique underground city well-known all over the world by its huge labyrinths, and especially by its excellent wines. \"Cricova\" is the first winery in Moldova which makes sparkling wine as it was prepared by the monk - wine maker Pierre Perignon. The technology \"Méthode Traditionnelle\" is a complex and thin process, consisting in secondary, in-bottle fermentation and the subconsequent maturation \"cuvée \" Address: Cricova, str. Petru Ungureanu, 1 Tel: +373 22 604 027</string>
     <string name="milestii_winery_description">Surrounded by a romantic aura, that natural wine depository – the biggest in the world – has appeared in the limestone galleries at the depth of 30-85 meters in the 70’s of the previous century.The wines that are stored here are the products of the harvest of different years, between 1986 and 1991. Spirit of the past times is felt in this underground wine city growing out of the large tunnels. Natural limestone galleries with total length of 200 km may be passed by transport. And the streets of the underground wine city, placed on a surface of 55 km, are full of oak buts that are standing there as guardians on the watch . Address: Milestii Mici Village, Ialoveni District, Republic of Moldova, MD-6819. Tel: +373 22 382 333</string>
     <string name="wine_tour">Wine Tour</string>
+    <string name="chisinau_airport">Chisinau Airport</string>
+    <string name="zaxi_restaurant">Zaxi Restaurant</string>
+    <string name="popasul_restaurant">Poapasul Dacilor Restaurant</string>
+    <string name="roata__vremii_restaurant">Roata Vremii Restaurant</string>
+    <string name="leogrand_hotel">Leogrand Hotel</string>
+    <string name="nobil_hotel">Nobil Luxury Boutique Hotel</string>
+    <string name="joly_allon_hotel">Joly Allon Hotel</string>
+    <string name="google_maps_chisinau_location">https://www.google.co.uk/maps/place/Chisinau,+Moldova/@46.743745,28.5562268,8.25z/data=!4m5!3m4!1s0x40c97c3628b769a1:0x37d1d6305749dd3c!8m2!3d47.0104529!4d28.8638103</string>
+    <string name="history_museum_chisinau">The National Museum of History of Moldova</string>
+    <string name="fine_arts_museum_chisinau">National Museum of Fine Arts</string>
+    <string name="ethnography_museum_chisinau"><![CDATA[The National Museum of Ethnography & Natural History]]></string>
+    <string name="puracari_winery">Purcari Winery</string>
+    <string name="cricova_winery">Cricova Winery</string>
+    <string name="milestii_mici_winery">Milestii Mici Winery</string>
+    <string name="location_main">Location</string>
+    <string name="airport_main">Airport</string>
+    <string name="hotel_main">Hotel</string>
+    <string name="wine_tour_main">Wine Tour</string>
+    <string name="food_drink_main">Food and Drink</string>
+    <string name="museums_main">Museums</string>
 </resources>

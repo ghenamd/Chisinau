@@ -19,9 +19,9 @@ public class HotelActivity extends AppCompatActivity {
         setContentView(R.layout.list_view);
         setTitle(getString(R.string.hotel));
         ArrayList<Object> objects = new ArrayList<>();
-        objects.add(new Object("Leogrand Hotel", getString(R.string.leogrand_hotel_description), R.drawable.leogrand_hotel));
-        objects.add(new Object("Nobil Luxury Boutique Hotel", getString(R.string.nobil_hotel_description), R.drawable.nobil_hotel));
-        objects.add(new Object("Joly Allon Hotel", getString(R.string.alon_hotel_description), R.drawable.jolly_allon_hotel));
+        objects.add(new Object(getString(R.string.leogrand_hotel), getString(R.string.leogrand_hotel_description), R.drawable.leogrand_hotel));
+        objects.add(new Object(getString(R.string.nobil_hotel), getString(R.string.nobil_hotel_description), R.drawable.nobil_hotel));
+        objects.add(new Object(getString(R.string.joly_allon_hotel), getString(R.string.alon_hotel_description), R.drawable.jolly_allon_hotel));
         ObjectAdapter adapter = new ObjectAdapter(this, objects);
 
         ListView listView = (ListView) findViewById(R.id.list_item);

@@ -20,9 +20,9 @@ public class MuseumActivity extends AppCompatActivity {
         setTitle(getString(R.string.museums));
 
         ArrayList<Object> objects = new ArrayList<>();
-        objects.add(new Object("The National Museum of History of Moldova", getString(R.string.history_museum_description), R.drawable.chisinau_history_museum));
-        objects.add(new Object("National Museum of Fine Arts", getString(R.string.art_museum_description), R.drawable.art_museum_chisinau));
-        objects.add(new Object("The National Museum of Ethnography & Natural History", getString(R.string.ethnography_museum_description), R.drawable.chisinau_ethnography_museum));
+        objects.add(new Object(getString(R.string.history_museum_chisinau), getString(R.string.history_museum_description), R.drawable.chisinau_history_museum));
+        objects.add(new Object(getString(R.string.fine_arts_museum_chisinau), getString(R.string.art_museum_description), R.drawable.art_museum_chisinau));
+        objects.add(new Object(getString(R.string.ethnography_museum_chisinau), getString(R.string.ethnography_museum_description), R.drawable.chisinau_ethnography_museum));
 
         ObjectAdapter adapter = new ObjectAdapter(this,objects);
         ListView listView = (ListView)findViewById(R.id.list_item);

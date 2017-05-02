@@ -19,7 +19,7 @@ public class LocationActivity extends AppCompatActivity {
         setContentView(R.layout.list_view);
         setTitle(getString(R.string.location));
         Intent intent = new Intent(android.content.Intent.ACTION_VIEW,
-                Uri.parse("https://www.google.co.uk/maps/place/Chisinau,+Moldova/@46.743745,28.5562268,8.25z/data=!4m5!3m4!1s0x40c97c3628b769a1:0x37d1d6305749dd3c!8m2!3d47.0104529!4d28.8638103"));
+                Uri.parse(getString(R.string.google_maps_chisinau_location)));
         startActivity(intent);
     }
 }
